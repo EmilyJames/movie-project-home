@@ -1,17 +1,81 @@
-body { 
-  background: url(../img/background.jpg) no-repeat center center fixed; 
+/*
+
+Title: SCSS Stylesheet for 'Home Movie Project' 
+
+Author:Emily James
+
+*/
+/*
+
+Variables
+
+*/
+/*
+
+Layout
+
+*/
+/* line 8, ../src/sass/_layout.scss */
+body {
+  background: url(../img/background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-.hide-text {
-text-indent: 100%;
-white-space: nowrap;
-overflow: hidden;
+/* line 16, ../src/sass/_layout.scss */
+.wrapper {
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  padding: 15px;
 }
 
-#logo {
-	max-width: 100%;
+/* line 24, ../src/sass/_layout.scss */
+.hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
+
+/* line 30, ../src/sass/_layout.scss */
+#logo {
+  max-width: 100%;
+}
+
+/* line 34, ../src/sass/_layout.scss */
+.nav-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* line 39, ../src/sass/_layout.scss */
+.nav-list li {
+  float: left;
+  padding-top: 10px;
+  width: 25%;
+  margin: 7px 0;
+}
+
+/* line 46, ../src/sass/_layout.scss */
+.nav-list li a {
+  color: #ed6a23;
+}
+
+/* line 50, ../src/sass/_layout.scss */
+.video {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+
+/*.nav-button {
+	background: #ed6a23;
+	border-radius: 20px;
+	height: 40px;
+	width: 90%;
+	margin: 5px 15px;
+}*/

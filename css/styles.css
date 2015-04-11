@@ -15,61 +15,70 @@ Variables
 Layout
 
 */
-/* line 8, ../src/sass/_layout.scss */
+/* line 18, ../src/sass/_layout.scss */
 body {
-  background: url(../img/background.jpg) no-repeat center center fixed;
+  background: url(../img/background-new.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-/* line 16, ../src/sass/_layout.scss */
+/* line 30, ../src/sass/_layout.scss */
 .wrapper {
   border: 1px solid #fff;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50px;
   padding: 15px;
+  max-width: 730px;
+  overflow: visible;
 }
 
-/* line 24, ../src/sass/_layout.scss */
+/* line 40, ../src/sass/_layout.scss */
+#box-story,
+#box-music {
+  position: absolute;
+  display: none;
+}
+
+/* line 45, ../src/sass/_layout.scss */
+#box-trailer {
+  max-width: 700px;
+  padding: 25px;
+  overflow: hidden;
+  display: none;
+}
+
+/* line 52, ../src/sass/_layout.scss */
 .hide-text {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
 }
 
-/* line 30, ../src/sass/_layout.scss */
+/* line 58, ../src/sass/_layout.scss */
 #logo {
   max-width: 100%;
 }
 
-/* line 34, ../src/sass/_layout.scss */
+/* line 62, ../src/sass/_layout.scss */
 .nav-list {
   list-style: none;
   padding-left: 0;
 }
 
-/* line 39, ../src/sass/_layout.scss */
+/* line 67, ../src/sass/_layout.scss */
 .nav-list li {
-  float: left;
-  padding-top: 10px;
+  padding-top: 0;
   width: 25%;
-  margin: 7px 0;
+  margin: 25px 0;
+  float: left;
 }
 
-/* line 46, ../src/sass/_layout.scss */
+/* line 74, ../src/sass/_layout.scss */
 .nav-list li a {
   color: #ed6a23;
-}
-
-/* line 50, ../src/sass/_layout.scss */
-.video {
-  position: relative;
-  max-width: 100%;
-  max-height: 100%;
-  overflow: hidden;
-  padding-bottom: 15px;
+  cursor: pointer;
 }
 
 /*.nav-button {
@@ -79,3 +88,61 @@ body {
 	width: 90%;
 	margin: 5px 15px;
 }*/
+/*
+
+Text 
+
+*/
+/* line 7, ../src/sass/_text.scss */
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+/* line 12, ../src/sass/_text.scss */
+.header {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #ed6a23;
+}
+
+/* line 20, ../src/sass/_text.scss */
+#box-music p {
+  text-align: center;
+}
+
+/* line 24, ../src/sass/_text.scss */
+#box-music ul {
+  list-style: none;
+}
+
+/* line 28, ../src/sass/_text.scss */
+#box-music ul li {
+  float: left;
+  text-align: center;
+  width: 30%;
+}
+
+/* line 34, ../src/sass/_text.scss */
+#box-music ul li a {
+  color: #ed6a23;
+}
+
+/* line 38, ../src/sass/_text.scss */
+#box-music ul li a:hover {
+  color: #c2571d;
+}
+
+/* 
+
+Media Queries 
+
+*/
+@media screen and (min-width: 800px) {
+  /* line 9, ../src/sass/_media.scss */
+  .nav-list li {
+    float: none;
+  }
+}

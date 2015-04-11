@@ -17,6 +17,8 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -31,105 +33,110 @@
 <body>
 
 	<header>
+
 		<div class="row">
-			<div class="col-sm-6 col-sm-offset-4">
-				<img id="logo" src="img/home-logo.png" alt="Home Movie Logo">
+			<div class="col-sm-6 col-sm-offset-3">
+				<img class="center-block" id="logo" src="img/home-logo.png" alt="Home Movie Logo">
 				<p class="hide-text">Home the Movie</p>
 			</div>	<!-- col-sm-6 -->
 		</div>	<!-- row -->
 
 	</header>
 
-	<!-- CONTECT SECTION ***************************************-->
-	<div class="row">
-		<div class="col-sm-6 col-sm-offset-4 wrapper">
+	<!-- CONTENT SECTION ***************************************-->
+	<div class="row center-block">
+		<div class="col-sm-6 col-sm-offset-3">
 
-
-			<!-- IMAGE SLIDER **********************************-->
 			<div class="row">
-				<div class="col-sm-12">
+			
 
-				<div id="slider" class="nivoSlider theme-default">
-					<img src="img/slide-1.jpg" alt="" title="" />
-					<img src="img/slide-2.jpg" alt="" title="" />
-					<img src="img/slide-3.jpg" alt="" title=""/>
-					<img src="img/slide-4.jpg" alt="" title=""/>
-					<img src="img/slide-5.jpg" alt="" title=""/>
-				</div>
+				<!-- IMAGE SLIDER **********************************-->
+				<div class="col-sm-12 wrapper" id="box-images">
 
-			</div>	<!-- col-sm-12 -->
+					<div id="slider" class="nivoSlider theme-default">
+						<img src="img/slide-1.jpg" alt="" title="" />
+						<img src="img/slide-2.jpg" alt="" title="" />
+						<img src="img/slide-3.jpg" alt="" title=""/>
+						<img src="img/slide-4.jpg" alt="" title=""/>
+						<img src="img/slide-5.jpg" alt="" title=""/>
+					</div>
+
+				</div>	<!-- col-sm-12 -->
+
+
+				<!-- STORY SECTION ****************************************-->
+				<div id="box-story" class="col-sm-12 wrapper">
+					<h2 class="header text-center">The Story</h2>
+
+					<p>When Earth is taken over by the overly confident Boov, an alien race in search of a new place to call home, all humans are promptly relocated while all Boov get busy reorganizing the planet. But when one resourceful girl, Tip, manages to avoid capture, she finds herself the accidental accomplice of a banished Boov named Oh. The two fugitives realize there's a lot more at stake than intergalactic relations as they embark on the road trip of a lifetime.
+					</p>
+				</div>	<!-- col-sm-12 -->
+
+
+				<!-- TRAILER SECTION ****************************************-->
+				<div id="box-trailer" class="col-sm-12 wrapper">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" width="800" height="438" src="https://www.youtube.com/embed/G9F6VhFY4wY?feature=player_embedded" allowfullscreen></iframe>
+						</div>
+
+				</div>	<!-- col-sm-12 -->
+
+
+				<!-- MUSIC SECTION ****************************************-->
+				<div id="box-music" class="col-sm-12 wrapper">
+					<h2 class="header text-center">The Music</h2>
+					<p>Check out these awesome songs featured in the movie!
+					</p>
+
+					<ul>
+						<li><a href="https://www.youtube.com/watch?feature=player_embedded&amp;v=PSmCo2Yg3LE" target="_blank"><img src="img/rihanna.jpg" alt=""><br>Rihanna<br>'Towards The Sun'</a></li>
+						<li><a href="https://www.youtube.com/watch?feature=player_embedded&amp;v=9fdAt0ke9w8" target="_blank"><img src="img/jlo.jpg" alt=""><br>Jennifer Lopez <br>'Feel The Light'</a></li>
+						<li><a href="https://itunes.apple.com/nz/album/home-original-motion-picture/id973658392?ign-mpt=uo%3D4" target="_blank"><img src="img/soundtrack.jpg" alt=""><br>Full<br>Soundtrack</a></li>
+					</ul>
+				</div>	<!-- col-sm-12 -->
 
 			</div>	<!-- row -->
 
-			<!-- NAVIGATION ************************************-->
-			<nav>										
-				<div class="row">
-					<div class="col-sm-12">
-
-						<ul class="nav-list text-center">
-							<li>
-								<a href=""><i class="fa fa-book fa-3x"></i>
-								</a>
-							</li>
-							<li>
-								<a href=""><i class="fa fa-film fa-3x"></i>
-								</a>
-							</li>
-							<li>
-								<a href=""><i class="fa fa-music fa-3x"></i>
-								</a>
-							</li>
-							<li>
-								<a href=""><i class="fa fa-camera fa-3x"></i>
-								</a>
-							</li>
-						</ul>	
-
-					</div>	<!-- col-sm-12 -->	
-
-				</div>	<!-- row -->
-
-			</nav>
-
-
-
-			</div>	<!-- col-sm-6 -->
-	</div>	<!-- row -->
-
-
-	<!-- STORY SECTION ****************************************-->
-	<div class="row">
-		<div class="col-sm-6 col-sm-offset-4 wrapper">
-			<h2 class="text-center">The Story</h2>
-			<p>When Earth is taken over by the overly confident Boov, an alien race in search of a new place to call home, all humans are promptly relocated while all Boov get busy reorganizing the planet. But when one resourceful girl, Tip, manages to avoid capture, she finds herself the accidental accomplice of a banished Boov named Oh. The two fugitives realize there's a lot more at stake than intergalactic relations as they embark on the road trip of a lifetime.
-			</p>
 		</div>	<!-- col-sm-6 -->
+
+		
+		<!-- NAVIGATION ************************************-->
+			<div class="col-sm-3">
+				<ul class="nav-list text-center">
+					<li>
+						<a id="button-story"><i class="fa fa-book fa-3x"></i>
+						</a>
+					</li>
+					<li>
+						<a id="button-trailer"><i class="fa fa-film fa-3x"></i>
+						</a>
+					</li>
+					<li>
+						<a id="button-music"><i class="fa fa-music fa-3x"></i>
+						</a>
+					</li>
+					<li>
+						<a id="button-images"><i class="fa fa-camera fa-3x"></i>
+						</a>
+					</li>
+				</ul>
+			</div>	<!-- col-sm-12 -->	
+
+
+
+
 	</div>	<!-- row -->
 
 
-	<!-- TRAILER SECTION ****************************************-->
-	<div class="row">
-		<div class="col-sm-6 col-sm-offset-4 wrapper">
-			<h2 class="text-center">The Trailer</h2>
-			<iframe class="video center-block" width="640" height="360" src="https://www.youtube.com/embed/G9F6VhFY4wY?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
-		</div>	<!-- col-sm-6 -->
-	</div>	<!-- row -->
+
+	<!-- FOOTER **********************************************-->
+	<footer>
+		
+		<p>FB: https://www.facebook.com/DreamWorksHome</p>
+		<p>Dreamworks logo</p>
+	</footer>
 
 
-	<!-- MUSIC SECTION ****************************************-->
-	<div class="row">
-		<div class="col-sm-6 col-sm-offset-4 wrapper">
-			<h2 class="text-center">The Music</h2>
-			<p>Songs by famous people featured in the movie!
-			</p>
-
-			<ul>
-				<li><a href="https://www.youtube.com/watch?feature=player_embedded&v=PSmCo2Yg3LE" target="_blank">Rihanna 'Towards The Sun'</a></li>
-				<li><a href="https://www.youtube.com/watch?feature=player_embedded&v=9fdAt0ke9w8" target="_blank">Jennifer Lopez 'Feel The Light'</a></li>
-				<li><a href="https://itunes.apple.com/nz/album/home-original-motion-picture/id973658392?ign-mpt=uo%3D4" target="_blank">Download the soundtrack</a></li>
-			</ul>
-		</div>	<!-- col-sm-6 -->
-	</div>	<!-- row -->
 
 
 
@@ -150,7 +157,43 @@
 		    	
 		    });
 		});
+
+
+		$(document).ready(function(){
+
+			$("#button-story").click(function() {
+		  		$("#box-story").show();
+		  		$("#box-music").hide();
+		  		$("#box-images").hide();
+		  		$("#box-trailer").hide();
+			});
+
+			$("#button-trailer").click(function() {
+		  		$("#box-trailer").show();
+		  		$("#box-story").hide();
+		  		$("#box-music").hide();
+		  		$("#box-images").hide();
+
+			});
+
+			$("#button-music").click(function() {
+		  		$("#box-music").show();
+		  		$("#box-story").hide();
+		  		$("#box-images").hide();
+		  		$("#box-trailer").hide();
+			});
+
+			$("#button-images").click(function() {
+		  		$("#box-images").show();
+		  		$("#box-story").hide();
+		  		$("#box-music").hide();
+		  		$("#box-trailer").hide();
+			});
+
+		});			
 	</script>
+
+
 
 	
 </body>

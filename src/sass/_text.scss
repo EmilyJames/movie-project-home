@@ -1,0 +1,41 @@
+/*
+
+Text 
+
+*/
+
+p {
+	font-family: $font-fam;
+	font-size: 18px;
+}
+
+.header {
+	font-family: $font-fam;
+	font-weight: 700;
+	font-size: 40px;
+	text-transform: uppercase;
+	color: $orange;
+}
+
+#box-music p {
+	text-align: center;
+}
+
+#box-music ul {
+	list-style: none;
+}
+
+#box-music ul li {
+	float: left;
+	text-align: center;
+	width: 30%;
+}
+
+#box-music ul li a {
+	color: $orange; 
+}
+
+#box-music ul li a:hover {
+	color: $orange-hover;
+}
+

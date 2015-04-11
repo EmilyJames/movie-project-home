@@ -10,16 +10,19 @@
 /* The Nivo Slider styles */
 .nivoSlider {
 	position:relative;
-	max-width:100%;
+	vertical-align: middle;
+	max-width:700px;
 	height:auto;
 	overflow: hidden;
 	border-radius: 50px;
+	margin-bottom: 7.3px;
 }
+
 .nivoSlider img {
 	position:absolute;
 	top:0px;
 	left:0px;
-	max-width: none;
+	max-width: 800px;
 }
 .nivo-main-image {
 	display: block !important;

@@ -6,11 +6,47 @@ Media Queries
 
 @media screen and (min-width: 800px) {
 
-	.nav-list li {	
-		float: none;
+	// .nav-list li {	
+	// 	float: none;
+	// }
+	
+	.high {
+		height: 500px;
 	}
 
 	.wrapper {
+		border-radius: 50px;
+		margin: 0;
 	}
+	
+	.header {
+		font-size: 40px;
+	}
+
+	.wrapper p {
+		font-size: 18px;
+	}
+
+	.nav-list li {	
+		font-size: 1em;
+		margin: 25px 0;
+	}
+	
+	#box-music ul li a {
+		font-size: 14px;
+	}	
+
+	#side-image {
+		display: initial;
+	}
+
+	#side-image-small {
+		display: none;
+	}
+
+	.foot {
+		margin-top: 50px;
+	}
+
 
 }
